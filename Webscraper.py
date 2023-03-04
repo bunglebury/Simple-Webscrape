@@ -2,12 +2,12 @@ import requests as re
 from bs4 import BeautifulSoup
 import pandas as pd
 
-url = "https://www.thoughtco.com/world-war-ii-timeline-1779991"
+url = ""
 
 r = re.get(url)
 soup = BeautifulSoup(r.text, 'html.parser')
 
-results = soup.find('div', {'class': 'loc article-content'})
+results = soup.find('div', {'class': ''})
 
 text = results.get_text(strip=True)
 
